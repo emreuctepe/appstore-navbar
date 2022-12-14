@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+
+  <!-- Bağlantılar -->
+
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <title>Appstore</title> <!--Sekme Başlığı-->
+
+</head>
+
+<body>
+
+  <ul class="menu"> <!--Butonların Kutusu-->
+
+    <li data-tab-target="#today" class="active buton"> <!--Butonlar-->
+
+      <i class="fa-solid fa-newspaper"></i> <!--Simgeler-->
+      
+      <span>Bugün</span> <!--Yazılar-->
+    
+    </li>
+
+    <li data-tab-target="#games" class="buton"> <!--Butonlar-->
+
+      <i class="fa-solid fa-rocket"></i>
+      <span>Oyunlar</span>
+    
+    </li>
+
+    <li data-tab-target="#apps" class="buton"> <!--Butonlar-->
+
+      <i class="fa-solid fa-database"></i>
+      <span>Uygulamalar</span>
+    
+    </li>
+    
+    <li data-tab-target="#arcade" class="buton"><!--Butonlar-->
+
+      <i class="fa-solid fa-gamepad"></i>
+      <span>Arcade</span>
+    
+    </li>
+
+    <li data-tab-target="#search" class="buton"><!--Butonlar-->
+
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <span>Ara</span>
+    
+    </li>
+
+  </ul>
+
+  <!-------------- İçerik kısmı (Oyunlar veya uygulamaların kısmı) ------------------->
+
+  <div class="content">
+
+    <div id="today" data-tab-content class="active">
+      <h1>Bugün</h1>
+      
+    </div>
+
+    <div id="games" data-tab-content>
+      <h1>Oyunlar</h1>
+      
+    </div>
+
+    <div id="apps" data-tab-content>
+      <h1>Uygulamalar</h1>
+      
+    </div>
+
+    <div id="arcade" data-tab-content>
+      <h1>Arcade</h1>
+      
+    </div>
+
+    <div id="search" data-tab-content>
+      <h1>Ara</h1>
+      
+    </div>
+
+  </div>
+
+</body>
+<script src="script.js" defer></script> <!--JavaScript dosyasının bağlantısı-->
+</html>
